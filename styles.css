@@ -1,0 +1,169 @@
+/* Estiliza o corpo da página */
+body {
+    font-family: "Elvetica", sans-serif; /* Define a fonte padrão */
+    background-color:#000000; /* Cor de fundo da página */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 70vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+  .classe1 {
+    color: #FFFB00;
+    font-style: italic;
+  display: inline-block;
+  text-align: center;
+  font-size: 3rem; /* Tamanho da fonte */
+  
+    
+  }
+
+  .classe2 {
+    color: white;
+    font-style: italic;
+    display: inline-block;
+    font-size: 3rem; /* Tamanho da fonte */
+    text-align: center;
+  
+}
+
+h3{
+ color:white; 
+ text-align:center;
+ font-size:15px;
+ font-family:arial;
+ margin-bottom: 2px;
+ font-weight:80;
+  
+}
+
+/*Alinhando a Imagem dentro do campo branco no centro*/ 
+
+.resultados-pesquisa img {
+    width: 100%; /* Ou um valor fixo como 500px */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+  text-align: center;
+    width: 100rem; /* Largura máxima da caixa de resultados */
+    height: 90vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+}
+
+
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+ input[type="text"] {
+  
+   align-items: center;
+   margin-top: 15px; /* espaçamento entre p nome e o campo pesquisar evento*/ 
+    width: 14rem; /* Largura do campo de entrada */
+    padding: 5px 10px; /* Espaçamento interno do campo */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+button {
+    
+    padding: 5px 10px; /* Espaçamento interno do botão */
+   
+    font-size: 18px; /* Tamanho da fonte */
+    background-color: #0442D7; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Adiciona um cursor de ponteiro ao passar o mouse */
+    width: 100px; /* Largura do botão */
+    
+}
+
+button:hover {
+    background-color: #A9C9EC; /* Cor do fundo ao passar o mouse */
+}
+  
+
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 0rem; /* Tamanho da fonte */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+
+
+    
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    
+    }
+}
